@@ -16,7 +16,7 @@
     <main class="d-flex justify-content-center align-items-center main_native">
         <div class="div_card row">
             <div class="col-md-7 col_1">
-                <div class="d-flex justify-content-center align-items-center register_title"><h2>Create an account</h2></div>
+                <div class="d-flex justify-content-center align-items-center register_title"><h2>Crear una cuenta</h2></div>
                 <div>
                     <div class="container_icon d-flex justify-content-center align-items-center">
                         <a href="#/google" class="box_icon col-md-4 d-flex justify-content-center align-items-center">
@@ -32,28 +32,36 @@
                     <p class="text_icon">o usa tus redes para registrarte</p>
                 </div>
                 <form class="form">
-                    <div class="box_input input-group">
-                        <span class="d-flex justify-content-center align-items-center input_icon" id="basic-addon1">
+                    <div class="box_input input-group mb-3">
+                        <span class="d-flex justify-content-center align-items-center input_icon">
                             <img src="images/usuario.png" alt="icon-user">
                         </span>
-                        <input type="text" class="form-control" placeholder="Full name" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                    <!-- <div class="input-group mb-3">
-                        <span class="d-flex justify-content-center align-items-center input_icon" id="basic-addon1">
-                            <img src="images/mensaje.png" alt="icon-user">
-                        </span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" placeholder="Nombre completo" required>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="d-flex justify-content-center align-items-center input_icon" id="basic-addon1">
-                            <img src="images/candado.png" alt="icon-user">
+                    <div class="box_input input-group  mb-3">
+                        <span class="d-flex justify-content-center align-items-center input_icon">
+                            <img src="images/mensaje.png" alt="icon-mesage">
                         </span>
-                        <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" placeholder="Correo electronico" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>-->
+                    <div class="box_input input-group  mb-3">
+                        <span class="d-flex justify-content-center align-items-center input_icon">
+                            <img src="images/candado.png" alt="icon-padlock">
+                        </span> 
+                        <input type="password" placeholder="contraseña" required>
+                    </div>
+                    <button type="submit" class="container btn btn-success">Submit</button>
                   </form>
             </div>
-            <div class="col-md-5 col_2">LOGIN</div>
+            <div class="col-md-5 col_2 d-flex justify-content-center align-items-center login_title">
+                <div>
+                    <h1>Bienvenido</h1>
+                    <p>Para unirte a nuestra plataforma por favor inicia sesión con tus datos</p>
+                    <div>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

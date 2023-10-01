@@ -13,18 +13,19 @@ body {
 }
 .div_card {
     height: 500px;
-    width: 700px;
+    width: 800px;
     border-radius: 5%;
 }
 .register_title {
     margin: 60px 0 0 0;
 }
-.register_title h2 {
+.register_title h2, .login_title h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 .col_1 {
-    background-color: aliceblue;
+    background-color: #fff;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%; 
 }
@@ -34,16 +35,15 @@ body {
     border-bottom-right-radius: 10%;   
 }
 .form {
-    /* outline: 1px solid black; */
-    margin: 10px 55px 0 55px;
+    margin: 10px 40px 0 40px;
 }
 .container_icon {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 .box_icon {
-    height: 35px;
-    width: 35px;
-    padding: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
     margin: 0px 10px;
     border-radius: 100%;
     outline: 1px solid #666;
@@ -53,6 +53,7 @@ body {
     cursor: pointer;
 }
 .box_icon img {
+    user-select: none;
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
@@ -63,22 +64,51 @@ body {
     font-size: 11px;
 }
 .input_icon {
-    width: 40px;
-    height: 40px;
+    width: 12%;
+    height: 35px;
     background-color: hwb(0 90% 9%);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: 1px solid hwb(0 90% 9%);
 }
 .input_icon img {
+    user-select: none;
     opacity: .5;
     width: 40%;
     height: 40%;
 }
 .box_input input{
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 1px solid hwb(0 90% 9%);;
+    border-top-right-radius: 10px;
+    font-size: 13px;
     outline: none;
+    border-bottom-right-radius: 10px;
+    border: 1px solid hwb(0 90% 9%);
+    outline: 1px solid hwb(0 90% 9%);
+    color: #777;
     padding-left: 5px;
-    width: 60%;
+    width: calc(100% - 12%);
+    height: 35px;
+}
+.btn {
+    margin-top: 10px;
+}
+.box_input input:focus {
+    color: #777;
+    background-color: #eee;
+}
+.box_input input::placeholder {
+    color: #777;
+}
+.login_title {
+    height: 500px;
+}
+.login_title h1 {
+    font-size: 50px;
+}
+.login_title p {
+    text-align: center;
+    font-size: 13px;
+}
+.login_title .btn {
+    outline: 1px solid black;
 }
