@@ -12,6 +12,7 @@ body {
     height: 100vh;
 }
 .div_card {
+    position: relative;
     height: 500px;
     width: 800px;
     border-radius: 5%;
@@ -19,7 +20,7 @@ body {
 .register_title {
     margin: 60px 0 0 0;
 }
-.register_title h2, .login_title h1{
+.register_title h2, .login_title h1, .login_register h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -30,7 +31,7 @@ body {
     border-bottom-left-radius: 10%; 
 }
 .col_2 {
-    background-color: #3ae2aa;
+    background-color: #27c08d;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;   
 }
@@ -99,6 +100,8 @@ body {
 .box_input input::placeholder {
     color: #777;
 }
+
+/* CAJA-OCULTA LOGIN */
 .login_title {
     height: 500px;
 }
@@ -108,7 +111,58 @@ body {
 .login_title p {
     text-align: center;
     font-size: 13px;
+    margin-bottom: 0px;
 }
-.login_title .btn {
-    outline: 1px solid black;
+.login_title .box_button {
+    height: 50px;
 }
+
+
+/* CAJA-OCULTA REGISTER */
+.col_2-1 {
+    position: absolute;
+    background-color: #27c08d;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    left: 0px;
+}
+.login_register {
+    display: block; /*Cambio para register*/
+    height: 500px;
+}
+.login_register h1 {
+    font-size: 50px;
+}
+.login_register p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.login_register .box_button {
+    height: 50px;
+}
+
+/* CAJA-LOGIN */
+.col_1-1 {
+    position: absolute;
+    background-color: #fff;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    right: 0;
+    height: 500px;
+}
+
+.form_login {
+    display: block;
+}
+/*
+BASICOS PARA LOS CAMBIOS:
+DISPLAY: BLOCK / NONE
+POSITION: ABSOLUTE
+RIGTH
+LEFT
+border-top-right-radius
+border-bottom-right-radius
+border-top-left-radius
+border-bottom-left-radius
+*/
