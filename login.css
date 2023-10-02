@@ -20,20 +20,10 @@ body {
 .register_title {
     margin: 60px 0 0 0;
 }
-.register_title h2, .login_title h1, .login_register h1{
+.register_title h2, .login_box h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-align: center;
-}
-.col_1 {
-    background-color: #fff;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%; 
-}
-.col_2 {
-    background-color: #27c08d;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;   
 }
 .form {
     margin: 10px 40px 0 40px;
@@ -102,67 +92,70 @@ body {
 }
 
 /* CAJA-OCULTA LOGIN */
-.login_title {
+.login_box {
     height: 500px;
 }
-.login_title h1 {
+.login_box h1 {
     font-size: 50px;
 }
-.login_title p {
+.login_box p {
     text-align: center;
     font-size: 13px;
     margin-bottom: 0px;
 }
-.login_title .box_button {
+.login_box .box_button {
     height: 50px;
 }
 
-
-/* CAJA-OCULTA REGISTER */
-.col_2-1 {
-    position: absolute;
-    background-color: #27c08d;
+/* FORM LOGIN */
+.col_1 {
+    display: block;
+    background-color: #fff;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
-    left: 0px;
 }
-.login_register {
-    display: block; /*Cambio para register*/
-    height: 500px;
-}
-.login_register h1 {
-    font-size: 50px;
-}
-.login_register p {
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 0px;
-}
-.login_register .box_button {
-    height: 50px;
-}
+/* BOX REGISTER */
+.col_2 {
+    display: flex;
+    background-color: #27c08d;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
 
-/* CAJA-LOGIN */
+}
+/* FORM REGISTER */
 .col_1-1 {
-    position: absolute;
+    display: none;
     background-color: #fff;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    right: 0;
     height: 500px;
 }
-
-.form_login {
-    display: block;
+/* BOX LOGIN */
+.col_2-1 {
+    display: none;
+    background-color: #27c08d;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    position: relative;
+    left: 100;
+    transition: left 2s ease;
 }
+
+.col_1-1-change {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.col_2-1-change {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
 /*
-BASICOS PARA LOS CAMBIOS:
-DISPLAY: BLOCK / NONE
-POSITION: ABSOLUTE
-RIGTH
-LEFT
-border-top-right-radius
-border-bottom-right-radius
-border-top-left-radius
-border-bottom-left-radius
+FORM REGISTER   : col_1-1
+FORM LOGIN      : col_1
+BOX REGISTER    : col_2
+BOX LOGIN       : col_2-1
 */
