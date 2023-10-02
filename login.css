@@ -90,7 +90,6 @@ body {
 .box_input input::placeholder {
     color: #777;
 }
-
 /* CAJA-OCULTA LOGIN */
 .login_box {
     height: 500px;
@@ -101,15 +100,15 @@ body {
 .login_box p {
     text-align: center;
     font-size: 13px;
+    padding: 0 8px;
     margin-bottom: 0px;
 }
 .login_box .box_button {
     height: 50px;
 }
-
 /* FORM LOGIN */
 .col_1 {
-    display: block;
+    width: 60%;
     background-color: #fff;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
@@ -117,14 +116,15 @@ body {
 /* BOX REGISTER */
 .col_2 {
     display: flex;
+    width: 40%;
     background-color: #27c08d;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-
 }
 /* FORM REGISTER */
 .col_1-1 {
     display: none;
+    width: 60%;
     background-color: #fff;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -133,26 +133,21 @@ body {
 /* BOX LOGIN */
 .col_2-1 {
     display: none;
+    width: 40%;
     background-color: #27c08d;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
-    position: relative;
-    left: 100;
-    transition: left 2s ease;
 }
-
 .col_1-1-change {
     display: block;
     position: absolute;
     right: 0;
 }
-
 .col_2-1-change {
     display: flex;
     position: absolute;
     left: 0;
 }
-
 /*
 FORM REGISTER   : col_1-1
 FORM LOGIN      : col_1
