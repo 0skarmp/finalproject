@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="d-flex justify-content-center align-items-center main_native">
+    <main class="main_native">
         <!-- CAJA DE DE LOGIN Y REGISTER-->
-        <div class="div_card d-flex">
+        <div class="div_card">
                 <!-- REGISTER -->
                 <div class="col_1-1">
                     <div class="d-flex justify-content-center align-items-center register_title"><h2>Crear una cuenta</h2></div>
@@ -33,14 +33,14 @@
                         </div>
                         <p class="text_icon">o usa tus redes para registrarte</p>
                     </div>
-                    <form class="form" action="">
+                    <form class="container" action="">
                         <div class="box_input input-group mb-3">
                             <span class="d-flex justify-content-center align-items-center input_icon">
                                 <img src="images/usuario.png" alt="icon-user">
                             </span>
                             <input type="text" placeholder="Nombre completo" required>
                         </div>
-                        <div class="box_input input-group  mb-3">
+                        <div class="box_input input-group mb-3">
                             <span class="d-flex justify-content-center align-items-center input_icon">
                                 <img src="images/mensaje.png" alt="icon-mesage">
                             </span>
@@ -52,13 +52,15 @@
                             </span>
                             <input type="text" placeholder="Nombre de Usuario" required>
                         </div>
-                        <div class="box_input input-group  mb-3">
+                        <div class="box_input input-group mb-3">
                             <span class="d-flex justify-content-center align-items-center input_icon">
                                 <img src="images/candado.png" alt="icon-padlock">
                             </span> 
                             <input type="password" placeholder="contraseña" required>
                         </div>
-                        <button type="submit" class="container btn btn-success">Enviar</button>
+                        <div class="box_input">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
                     </form>
                 </div>
                 <!-- LOGIN -->
@@ -78,7 +80,7 @@
                         </div>
                         <p class="text_icon">o usa tus redes para registrarte</p>
                     </div>
-                    <form class="form" action="">
+                    <form class="container" action="">
                         <div class="box_input input-group mb-3">
                             <span class="d-flex justify-content-center align-items-center input_icon">
                                 <img src="images/usuario2.png" alt="icon-user">
@@ -91,7 +93,9 @@
                             </span> 
                             <input type="password" placeholder="contraseña" required>
                         </div>
-                        <button type="submit" class="container btn btn-success">Enviar</button>
+                        <div class="box_input">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
                     </form>
                 </div>
         
